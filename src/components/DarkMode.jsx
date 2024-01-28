@@ -14,7 +14,7 @@ const DarkMode = () => {
         }else{
             element.classList.remove('light');
             element.classList.remove('dark');
-        }                                      
+        }                                       
     });
 
     return (
