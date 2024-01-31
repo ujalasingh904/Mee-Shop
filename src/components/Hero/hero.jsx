@@ -33,13 +33,14 @@ const HeroData = [
 export const Hero = () => {
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplaySpeed: 1,
-    cssEase: "ease-in-out",
+    autoplay:true,
+    autoplaySpeed: 3000,
+    cssEase: "ease-out",
     pauseOnHover: false,
     pauseOnFocus: true,
   };
@@ -47,8 +48,7 @@ export const Hero = () => {
   return (
     <div className='container'>
       <div className='overflow-hidden rounded-3xl min-h-[550px] sm:min-h-[650px]
-        hero-bg-color flex justify-center items-center
-      '>
+        hero-bg-color flex justify-center items-center'>
         <div className='container pb-8 sm:pb-0'>
           {/*hero section*/}
           <Slider {...settings}>
