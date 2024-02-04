@@ -1,14 +1,17 @@
-import React from 'react' 
+import React from 'react'
 import Button from '../shared/Button';
 
-const ProductCard2 = ({data}) => {
-  return (
-    <div className='mb-10'>
+const ProductCard2 = ({ data }) => {
+    return (
+        <div className='mb-10'>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5 place-items-center'>
                 {/* card section  */}
                 {
                     data.map((data) => (
-                        <div key={data.id} className='group'>
+                        <div key={data.id} className='group'
+                            data-aos="fade-up"
+                            data-aos-delay={data.aosDelay}
+                        >
                             <div className='relative'>
                                 <img src={data.img} alt="Loading"
                                     className='h-[180px] w-[260px] object-cover rounded-md'
@@ -37,7 +40,7 @@ const ProductCard2 = ({data}) => {
             </div>
 
         </div>
-  )
+    )
 }
 
 export default ProductCard2

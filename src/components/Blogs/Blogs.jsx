@@ -42,11 +42,12 @@ const Blogs = () => {
 
                     {
                         BlogData.map((data) => (
-                            <div key={data.title} className='bg-white dark:bg-gray-900'>
+                            <div key={data.title} className='bg-white dark:bg-gray-900' data-aos="fade-up"
+                                data-aos-delay={data.aosDelay}>
                                 {/* img section  */}
                                 <div className='overflow-hidden rounded-2xl mb-2'>
-                                    <img src={data.image} alt="Loading" 
-                                      className='w-full h-[220px] object-cover hover:scale-105 rounded-2xl duration-500'
+                                    <img src={data.image} alt="Loading"
+                                        className='w-full h-[220px] object-cover hover:scale-105 rounded-2xl duration-500'
                                     />
                                 </div>
 
@@ -57,11 +58,11 @@ const Blogs = () => {
                                     <p className='line-clamp-2 text-sm text-gray-600 dark:text-gray-400'>{data.subtitle}</p>
                                 </div>
 
- 
+
 
                             </div>
 
-                    ))
+                        ))
                     }
                 </div>
 
