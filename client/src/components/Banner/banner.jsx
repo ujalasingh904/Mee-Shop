@@ -31,7 +31,9 @@ const Banner = ({ data }) => {
                         <p data-aos="fade-up" className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold'>{data.title3}</p>
                         <p data-aos="fade-up" className='text-xs sm:text-sm tracking-wide leading-5'>{data.title4}</p>
                         <div data-aos="fade-up" data-aos-offset="0">
-                            <button style={{ color: data.bgColor }} className='bg-white py-1.5 sm:py-2 px-3 sm:px-4 text-sm sm:text-base rounded-full hover:scale-105 transition-transform'>Shop Now</button>
+                            <button 
+                            onClick={() => window.location.href = `/products`}
+                            style={{ color: data.bgColor }} className='bg-white py-1.5 sm:py-2 px-3 sm:px-4 text-sm sm:text-base rounded-full hover:scale-105 transition-transform'>Shop Now</button>
                         </div>
                     </div>
                 </div>

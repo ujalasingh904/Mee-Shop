@@ -27,6 +27,7 @@ const Category = () => {
                                         <p className='mb-[2px] text-xs sm:text-sm text-gray-400'>Category</p>
                                         <p className='text-lg sm:text-xl lg:text-2xl font-semibold mb-[2px]'>{cat.name}</p>
                                         <Button
+                                            onClick={() => window.location.href = `/products`}
                                             text="Browse"
                                             bgColor="bg-primary"
                                             textColor="text-white"
