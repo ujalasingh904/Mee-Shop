@@ -15,7 +15,11 @@ const PORT = process.env.PORT || 5000;
 // Connect to MongoDB
 connectDB();
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: process.env.VITE_API_URL || 'http://localhost:5173',
+  }
+));
 app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
