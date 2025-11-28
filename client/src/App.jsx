@@ -17,7 +17,7 @@ const CheckoutPage = lazy(() => import('./pages/CheckoutPage'));
 const OrderSuccessPage = lazy(() => import('./pages/OrderSuccessPage'));
 
 const App = () => {
-  const [OrderPopup, setOrderPopup] = useState(false);
+  const [OrderPopup, setOrderPopup] = useState(false); 
   const handleOrderPopup = () => setOrderPopup((v) => !v);
 
   return (

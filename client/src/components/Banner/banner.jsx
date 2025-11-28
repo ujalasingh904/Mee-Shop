@@ -29,7 +29,7 @@ const Banner = ({ data }) => {
                     <div className='flex flex-col justify-center gap-3 sm:gap-4 p-4 sm:p-6 md:p-8'>
                         <p data-aos="zoom-out" className='font-bold text-base sm:text-lg lg:text-xl'>{data.title2}</p>
                         <p data-aos="fade-up" className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold'>{data.title3}</p>
-                        <p data-aos="fade-up" className='text-xs sm:text-sm tracking-wide leading-5'>{data.title4}</p>title4}</p>
+                        <p data-aos="fade-up" className='text-xs sm:text-sm tracking-wide leading-5'>{data.title4}</p>
                         <div data-aos="fade-up" data-aos-offset="0">
                             <button style={{ color: data.bgColor }} className='bg-white py-1.5 sm:py-2 px-3 sm:px-4 text-sm sm:text-base rounded-full hover:scale-105 transition-transform'>Shop Now</button>
                         </div>
@@ -39,6 +39,6 @@ const Banner = ({ data }) => {
 
         </div>
     )
-}
+} 
 
 export default Banner
